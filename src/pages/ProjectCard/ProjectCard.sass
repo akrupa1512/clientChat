@@ -1,0 +1,185 @@
+.ProjectCard-serverError
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.ProjectCard
+  display: flex
+  flex-direction: column
+  font-family: 'Montserrat', sans-serif
+  color: rgba(0,0,139, 0.9)
+  .ProjectCard-loading
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(255,255,255,0.8)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 100
+    .ProjectCard-image
+      width: 256px
+      height: 256px
+      background-size: cover
+      margin-bottom: 10px
+    .ProjectCard-text
+      font-size: 24px
+      font-weight: 500
+      color: rgba(255,255,255,0.9)
+      background-color: rgba(255,0,0,.5)
+      padding: 3px
+      border-radius: 5px
+  .ProjectCard-topBar
+    display: flex
+    flex-direction: column
+    background-color: rgba(0,0,0,.02)
+    padding: 10px
+    border-radius: 10px
+    margin-bottom: 10px
+    .ProjectCard-topInfo
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      .ProjectCard-created
+        color: rgba(0, 0, 0, .5)
+        font-size: 14px
+        display: flex
+        flex-direction: column
+        text-align: end
+      .ProjectCard-name
+        display: flex
+        flex-direction: row
+        font-size: 24px
+        font-weight: 500
+        color: rgba(0,0,139,0.75)
+        transition: color 1s ease
+      .ProjectCard-name:hover
+        color: rgba(0,0,139,1)
+    .ProjectCard-status
+      display: flex
+      flex-direction: row
+      align-items: center
+      .ProjectCard-actual
+        font-size: 20px
+        font-weight: 500
+      .ProjectCard-button
+        cursor: pointer
+        margin-left: 5px
+        font-size: 16px
+        font-weight: 500
+        color: rgba(255,255,255,0.9)
+        background-color: rgba(255,0,0,.5)
+        padding: 3px
+        border-radius: 5px
+    .ProjectCard-bottomInfo
+      display: flex
+      flex-direction: row
+      color: rgba(0, 0, 0, .5)
+      font-size: 12px
+      span
+        margin-top: 5px
+        margin-right: 10px
+  .ProjectCard-bottomBar
+    display: flex
+    flex-direction: row
+    .ProjectCard-users
+      color: rgba(0,0,139, 0.8)
+      width: 30%
+      display: flex
+      flex-direction: column
+      background-color: rgba(0,0,0,.02)
+      padding: 10px
+      border-radius: 10px
+      margin-left: 10px
+      .ProjectCard-user
+        display: flex
+        flex-direction: row
+        align-items: center
+        background-color: rgba(0,0,0,.03)
+        border-radius: 5px
+        padding: 5px
+        margin-bottom: 5px
+        cursor: pointer
+        .ProjectCard-userPhoto
+          margin-right: 5px
+          width: 42px
+          height: 42px
+          border-radius: 100%
+          background-position: center
+          background-size: cover
+        .ProjectCard-userInfo
+          display: flex
+          flex-direction: column
+          .ProjectCard-name
+            display: flex
+            flex-direction: row
+            font-size: 18px
+            .ProjectCard-creator
+              width: 16px
+              height: 16px
+              opacity: .75
+              background-size: cover
+              margin-left: 2px
+          .ProjectCard-email
+            font-size: 14px
+      .ProjectCard-user:last-child
+        margin-bottom: 0
+      .ProjectCard-addUser
+        display: flex
+        flex-direction: row
+        align-items: center
+        .ProjectCard-addIcon
+          width: 38px
+          height: 38px
+          opacity: .75
+          background-size: cover
+          cursor: pointer
+        .ProjectCard-addUserItems
+          display: flex
+          flex-direction: row
+          align-items: center
+          input
+            margin-left: 5px
+            margin-top: 5px
+            margin-bottom: 5px
+            padding: 2px 4px
+            font-weight: 500
+            font-size: 18px
+            border-radius: 5px
+            color: rgba(0,0,139,0.85)
+            border: 1px rgba(0,0,139,0.75) solid
+            outline: none
+          .ProjectCard-dropDownUsers
+            align-self: flex-start
+            z-index: 10
+            display: flex
+            flex-direction: column
+            margin-top: 33px
+            margin-left: 6px
+            position: absolute
+            background-color: rgba(0,0,0,.8)
+            padding: 5px
+            border-radius: 5px
+            .ProjectCard-dropDownUser
+              cursor: pointer
+              color: rgba(255,255,255,0.9)
+              background-color: rgba(0,0,0,.5)
+            .ProjectCard-dropDownUser:hover
+              background-color: rgba(0,0,0,.2)
+          div:last-child
+            margin-left: 5px
+            margin-top: 5px
+            margin-bottom: 5px
+            cursor: pointer
+            padding: 4px 6px
+            background-color: rgba(0,0,139,0.75)
+            color: rgba(255, 255, 255, .85)
+            font-weight: 500
+            border-radius: 5px
+    .ProjectCard-tasks
+      width: 70%
+      display: flex
+      flex-direction: column
+      background-color: rgba(0,0,0,.02)
+      padding: 10px
+      border-radius: 10px

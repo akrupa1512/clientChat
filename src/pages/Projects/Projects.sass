@@ -1,0 +1,101 @@
+.Projects-body
+  display: flex
+  flex-direction: column
+  .Projects-menu
+    display: flex
+    flex-direction: row
+    background-color: rgba(0,0,0,.02)
+    padding: 5px 15px
+    .Projects-menuItem
+      cursor: pointer
+      padding: 4px 6px
+      background-color: rgba(0,0,139,0.75)
+      color: rgba(255, 255, 255, .85)
+      font-weight: 500
+      border-radius: 5px
+  .Projects-addNewProject
+    transition: height 500ms ease
+    height: 0
+    overflow: hidden
+    display: flex
+    flex-direction: row
+    background-color: rgba(0,0,0,.02)
+    label
+      margin-left: 15px
+      margin-top: 5px
+      margin-bottom: 5px
+      padding: 2px 4px
+      font-weight: 500
+      font-size: 18px
+      color: rgba(0,0,139,0.85)
+    input
+      margin-left: 5px
+      margin-top: 5px
+      margin-bottom: 5px
+      padding: 2px 4px
+      font-weight: 500
+      font-size: 18px
+      border-radius: 5px
+      color: rgba(0,0,139,0.85)
+      border: 1px rgba(0,0,139,0.75) solid
+      outline: none
+      max-width: 500px
+      width: 100%
+    div
+      margin-left: 5px
+      margin-top: 5px
+      margin-bottom: 5px
+      cursor: pointer
+      padding: 4px 6px
+      background-color: rgba(0,0,139,0.75)
+      color: rgba(255, 255, 255, .85)
+      font-weight: 500
+      border-radius: 5px
+  .Projects
+    display: flex
+    flex-direction: column
+    font-family: 'Montserrat', sans-serif
+    background-color: rgba(0,0,0,.02)
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    .Projects-project:first-child
+      margin-top: 0
+    .Projects-project
+      display: flex
+      flex-direction: column
+      margin: 10px
+      padding: 5px 15px
+      border-top: 1px rgba(0,0,139,0.75) solid
+      .Projects-topInfo
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .Projects-created
+          color: rgba(0, 0, 0, .5)
+          font-size: 14px
+          display: flex
+          flex-direction: column
+          text-align: end
+        .Projects-name
+          font-size: 22px
+          font-weight: 500
+          cursor: pointer
+          color: rgba(0,0,139,0.75)
+          transition: color 1s ease
+        .Projects-name:hover
+          color: rgba(0,0,139,1)
+      .Projects-status
+        font-size: 20px
+        font-weight: 500
+      .Projects-bottomInfo
+        display: flex
+        flex-direction: row
+        color: rgba(0, 0, 0, .5)
+        font-size: 12px
+        span
+          margin-top: 5px
+          margin-right: 10px

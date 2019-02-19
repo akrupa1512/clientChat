@@ -1,0 +1,51 @@
+.UserList
+  .UserList-menu
+    display: flex
+    flex-direction: row
+    background-color: rgba(0,0,0,.02)
+    padding: 5px 15px
+    .UserList-menuItem
+      margin-right: 5px
+      cursor: pointer
+      padding: 4px 6px
+      background-color: rgba(0,0,139,0.75)
+      color: rgba(255, 255, 255, .85)
+      font-weight: 500
+      border-radius: 5px
+  .UserList-body
+    display: flex
+    flex-direction: column
+    font-family: 'Montserrat', sans-serif
+    color: darkblue
+    background-color: rgba(0,0,0,.01)
+    .UserList-loading
+      position: fixed
+      width: 100%
+      height: 100%
+      background-color: rgba(255,255,255,0.8)
+      display: flex
+      justify-content: center
+      align-items: center
+      z-index: 100
+    .UserList-user
+      display: flex
+      flex-direction: row
+      margin: 10px
+      cursor: pointer
+      transition: margin-left 500ms ease
+      .UserList-userPhoto
+        margin-right: 5px
+        width: 42px
+        height: 42px
+        border-radius: 100%
+        background-position: center
+        background-size: cover
+      .UserList-userInfo
+        display: flex
+        flex-direction: column
+        .UserList-name
+          font-size: 18px
+        .UserList-email
+          font-size: 14px
+    .UserList-user:hover
+      margin-left: 30px

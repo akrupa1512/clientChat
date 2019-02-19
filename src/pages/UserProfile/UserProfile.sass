@@ -1,0 +1,59 @@
+.UserProfile
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  background-color: rgba(0,0,0,.02)
+  padding: 10px
+  font-family: 'Montserrat', sans-serif
+  .UserProfile-loading
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(255,255,255,0.8)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 80
+  .UserProfile-photoInfo
+    display: flex
+    flex-direction: column
+    align-items: center
+    .UserProfile-photo
+      width: 200px
+      height: 200px
+      background-size: cover
+      background-position: center
+      border-radius: 5px
+      display: flex
+      justify-content: center
+      align-items: center
+      input
+        height: 100%
+        width: 100%
+        outline: none
+        opacity: 0
+  .UserProfile-info
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    margin: 0 10px
+    .UserProfile-mainInfo
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      div:first-child
+        font-size: 32px
+        font-weight: 500
+        color: rgba(0,0,255,.5)
+      div
+        color: rgba(0, 0, 0, .5)
+    .UserProfile-secondInfo
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-end
+      div
+        color: rgba(0, 0, 0, .5)
+      div:last-child
+        cursor: pointer

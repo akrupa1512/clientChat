@@ -1,0 +1,74 @@
+.LogInAndSignIn-loading
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(255,255,255,0.8)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 80
+.LogInAndSignIn
+  display: flex
+  flex-direction: column
+  margin-top: 50px
+  align-items: center
+  color: rgba(0,0,139,0.85)
+  .LogInAndSignIn-success
+    color: rgba(0,255,0,0.75)
+    font-size: 28px
+    font-weight: 500
+    margin-top: 10px
+  .LogInAndSignIn-error
+    color: rgba(255,0,0,0.75)
+    font-size: 28px
+    font-weight: 500
+    margin-top: 10px
+  .LogInAndSignIn-signMain
+    align-items: center
+    display: flex
+    flex-direction: row
+    .LogInAndSignIn-sign
+      align-self: flex-start
+      display: flex
+      flex-direction: column
+      width: 350px
+      span
+        font-size: 22px
+        font-weight: 500
+        text-align: center
+      label
+        margin-top: 5px
+        margin-left: 10px
+      input
+        margin-left: 5px
+        padding: 2px 4px
+        font-weight: 500
+        font-size: 18px
+        border-radius: 5px
+        color: rgba(0,0,139,0.85)
+        border: 1px rgba(0,0,139,0.75) solid
+        outline: none
+      .LogInAndSignIn-invalid
+        border: 1px rgba(255,0,0,0.75) solid
+      .LogInAndSignIn-error
+        margin-top: -3px
+        font-size: 12px
+        font-weight: 400
+        color: rgba(255,0,0,0.75)
+        height: 15px
+      div
+        margin-left: 5px
+        margin-top: 5px
+        margin-bottom: 5px
+        cursor: pointer
+        padding: 4px 6px
+        background-color: rgba(0,0,139,0.75)
+        color: rgba(255, 255, 255, .95)
+        font-weight: 500
+        border-radius: 5px
+        text-align: center
+    .LogInAndSignIn-separator
+      margin: 0 20px
+      height: 220px
+      border: 3px rgba(0,0,139,0.75) solid
+      border-radius: 5px
